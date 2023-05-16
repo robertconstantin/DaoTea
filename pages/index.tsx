@@ -115,7 +115,7 @@ const IndexPage = () => {
           </div>
         </form>
       </div>
-      <div className="absolute bottom-5">
+      <div className="absolute bottom-5 items-center flex flex-col">
         <ul className="flex space-x-3">
           <li>
             <Link href="https://instagram.com/daotea.ro/">
@@ -172,6 +172,7 @@ const IndexPage = () => {
             </Link>
           </li>
         </ul>
+        <p className="text-xs text-black">Powered by <Link href="https://seacoders.com"><a className="hover:text-green" target="_blank">SeaCoders</a></Link> </p>
       </div>
   
   

@@ -16,13 +16,14 @@ const Layout = ({ children, title = "This is the default title" }: Props) => (
         name="description"
         content="DaoTea.ro - probabil cel mai aprecial magazin online de Yerba Mate din Romania"
       />
-      <meta property="og:title" content={`${title} | Themeptation`} />
+      <meta property="og:title" content={`${title} | by SeaCoders.com`} />
       <meta
         property="og:description"
         content="DaoTea.ro - probabil cel mai aprecial magazin online de Yerba Mate din Romania"
       />
       <meta property="og:url" content="https://daotea.ro/" />
       <meta property="og:type" content="website" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     </Head>
     {children}
   </div>
