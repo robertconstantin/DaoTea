@@ -5,9 +5,13 @@ import { collection, addDoc } from "firebase/firestore";
 import  {db } from '../firebaseConfig';
 
 const IndexPage = () => {
+
+  interface Form {
+    [k: string]: any;
+  }
   const [email, setEmail] = useState("")
   //   Form validation
-  const [errors, setErrors] = useState({});
+  let [errors, setErrors] = useState<Form>([]);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
 
@@ -49,7 +53,6 @@ const IndexPage = () => {
           setShowSuccessMessage(true);
           setTimeout(() => {
             setShowSuccessMessage(false);
-            setErrors(false)
           }, 10000);
         } catch (e) {
           setShowSuccessMessage(false);
