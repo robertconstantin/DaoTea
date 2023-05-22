@@ -72,9 +72,9 @@ const IndexPage = () => {
       <img
         src="/images/shapes.svg"
         alt="hero"
-        className="absolute left-24 bottom-24 animate-blob2"
+        className="absolute left-0 bottom-24 animate-blob2"
       />
-      <div className="relative z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
+      <div className="relative z-10 py-6 space-y-8 md:space-y-16 lg:space-y-32 text-gray-900">
         <div className="text-center space-y-10 flex-col items-center flex">
           {/* <h3 className="font-light text-xl uppercase tracking-wider">
             Coming soon
@@ -82,14 +82,14 @@ const IndexPage = () => {
           <img
             src="/images/daotea.svg"
             alt="hero"
-            className="max-w-1/2"
+            className="lg:max-w-1/2 max-w-60"
           />
-          <h1 className="text-5xl lg:text-9xl font-extrabold text-black">Tea you soon!</h1>
+          <h1 className="text-4xl lg:text-9xl font-extrabold text-black">Tea you soon!</h1>
           <p className="text-md text-black lg:text-l tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
             Lucram la cea mai frumoasa comunitate de iubitori de ceai, spiritualitate si viata sanatoasa din Romania, alatura-te si tu!
           </p>
         </div>
-        <form>
+        <form className="mt-8">
           <div className="relative z-10 mx-10 lg:max-w-xl lg:mx-auto">
             <input
               type="text"
